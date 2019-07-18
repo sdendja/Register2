@@ -1,0 +1,34 @@
+<form class="form-f2f">
+  
+    <% include ./partials/messages %>
+    
+    <div class="text-center">
+        <p class="lead">Vortrag erstellen</p>
+        <main role="main" class="">
+            <div class="form-group row">
+                <button  class="btn btn-primary btn-block" type="submit" id="btnCreateAsset" class="col-sm-2 col-form-label">Erstellen</button>
+                &nbsp;
+                <input class="form-control" id="inputAssetName" type="text" placeholder="Beispielname" name="assetName"/>
+                &nbsp;
+                <input class="form-control" id="inputAssetAmount" type="text" placeholder="Anzahl der Tickets" name="assetamount"/>
+            </div>
+        </main>
+    </div>
+
+    <% include ./partials/messages %>
+
+    <div class="text-center">
+            <% include ./partials/messages %>
+        <p class="lead">Vortrag löschen</p>
+        <main role="main" class="">
+            <div class="form-group row">
+                <button  class="btn btn-primary btn-block" type="submit" id="btnDeleteAsset" class="col-sm-2 col-form-label">Löschen</button>
+                &nbsp;
+                <input class="form-control" id="inputAssetName2" type="text" placeholder="Beispielname" name="assetName" value="<%= typeof name != 'undefined' ? name : '' %>"/>
+            </div>
+        </main>
+    </div>  
+</form>
+
+        
+

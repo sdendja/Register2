@@ -1,0 +1,20 @@
+
+    
+<div class="container-fluid">
+  <p class="lead text-center">Alle Benutzer mit Emailadresse <br> und Walladdresse</p>
+  <ul>
+      <% 
+        for (var i = 0; i < userlist.length; i++) { %>
+          <form class="form-control">
+              <a><%= userlist[i].email %></a>,
+              <a><%= userlist[i].walletcreated %></a>,
+              <a><%= userlist[i].created %></a>
+          </form>
+      <% 
+    } 
+  %>
+  </ul>
+</div> 
+
+
+

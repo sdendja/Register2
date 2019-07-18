@@ -1,0 +1,31 @@
+
+
+
+
+<form class="form-signin" method="post" action="/users/register"> 
+  
+  <% include ./partials/messages %>
+  <div class="form-group">
+  <h1 class="h3 mb-3 font-weight-normal text-center">Bitte registrieren</h1>
+
+  <div class="form-group">
+    <label for="inputEmail" class="sr-only">E-Mail-Adresse</label>
+    <input type="email" id="email" name="email" class="form-control" placeholder="E-Mail-Adresse" value="<%= typeof email != 'undefined' ? email : '' %>"/>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="password" name="password" class="form-control" placeholder="Erstelle Password" value="<%= typeof password != 'undefined' ? password : '' %>"/>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword2" class="sr-only">Password</label>
+    <input type="password" id="password2" name="password2" class="form-control" placeholder="Password Wiederholen" value="<%= typeof password2 != 'undefined' ? password2 : '' %>"/>
+  </div>
+
+  <div class="form-group"></div>
+    <button id="btnRegister" class="btn btn-primary btn-block" type="submit">Registrieren </button>
+  </div>
+    <p class="lead mt-4 text-center">Bereits registriert? <a href="/users/login">Anmelden</a></p>
+  </div>
+</form>
